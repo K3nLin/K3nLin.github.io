@@ -4,13 +4,14 @@ import LinkButton from './components/LinkButton'
 import emailIcon from './assets/envelope-solid.svg'
 import githubIcon from './assets/github-brands.svg'
 import linkedInIcon from './assets/linkedin-brands.svg'
+import profilePicture from './assets/profilepic.jpg'
 
 const App = () => {
   return (
-    <div className="flex flex-row space-x-5">
+    <div className="flex flex-row">
       <div
         id="nav-bar"
-        className="sticky z-10 flex h-screen w-1/6 flex-col items-center justify-between space-y-10 sm:w-3/12"
+        className="sticky top-0 z-10 flex h-screen w-1/6 flex-col items-center justify-between space-y-10 sm:w-3/12"
       >
         <p className="block text-2xl text-nowrap text-white sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl">
           Ken Lin
@@ -48,9 +49,19 @@ const App = () => {
           />
         </nav>
       </div>
-      <div id="section-cont" className="flex items-center">
-        <section id="about-me">
-          <div>
+      <div id="section-cont" className="space-x flex flex-col">
+        <section
+          id="about-me"
+          className="flex h-screen items-center justify-center space-x-5"
+        >
+          <div className="mx-5 inline-block size-20 shrink-0 overflow-hidden rounded-full sm:size-50 md:size-65 lg:size-100">
+            <img
+              src={profilePicture}
+              alt="Profile Picture"
+              className="scale-130 object-cover object-center"
+            ></img>
+          </div>
+          <div id="right-section" className="">
             <h1>A Little About Me!</h1>
             <p>
               My name is Ken Lin, I am currently a senior at Stony Brook
@@ -58,7 +69,11 @@ const App = () => {
               Full-Stack developer who loves to learn new technologies and
               leverage them to solve real-world problems.
             </p>
+            <button>View Resume</button>
           </div>
+        </section>
+        <section id="projects" className="h-screen">
+          <p>hello</p>
         </section>
       </div>
     </div>
