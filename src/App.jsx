@@ -176,6 +176,13 @@ const App = () => {
             <SectionHeader title={'929-293-6186'} />
           </div>
         </section>
+        <h3 className="py-3 text-center">
+          © Copyright by{' '}
+          <a href="https://github.com/K3nLin" target="_blank">
+            Ken Lin
+          </a>
+          . Use for your portfolio. Don't claim as your own.
+        </h3>
       </div>
     </div>
   )
