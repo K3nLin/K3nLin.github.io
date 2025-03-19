@@ -7,6 +7,7 @@ import LinkButton from './components/LinkButton'
 import StylishButton from './components/StylishButton.jsx'
 import TimelineItem from './components/TimelineItem'
 import SectionHeader from './components/SectionHeader.jsx'
+import ContactLink from './components/ContactLink.jsx'
 
 // Images
 import emailIcon from './assets/envelope-solid.svg'
@@ -150,20 +151,12 @@ const App = () => {
           ))}
         </section>
         <section id="contact-me" className="flex flex-col py-5 sm:flex-row">
-          <div className="flex-1/2 space-y-5 border-b-1 sm:border-b-0">
+          <div className="flex flex-1/2 flex-col items-center space-y-5 border-b-1 align-middle sm:border-b-0">
             <SectionHeader title={'My Links'} fontSize="md:text-5xl" />
-            <a
-              href="https://github.com/K3nLin"
-              className="text block text-center text-2xl md:text-4xl"
-            >
+            <ContactLink href={'https://www.linkedin.com/in/ken-j-lin'}>
               LinkedIn
-            </a>
-            <a
-              href="https://www.linkedin.com/in/ken-j-lin"
-              className="text block text-center text-2xl md:text-4xl"
-            >
-              Github
-            </a>
+            </ContactLink>
+            <ContactLink href={'https://github.com/K3nLin'}>Github</ContactLink>
           </div>
           <div className="flex-1/2">
             <SectionHeader title={'Contact Me'} fontSize="md:text-5xl" />
