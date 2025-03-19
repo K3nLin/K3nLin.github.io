@@ -153,10 +153,15 @@ const App = () => {
         <section id="contact-me" className="flex flex-col py-5 sm:flex-row">
           <div className="flex flex-1/2 flex-col items-center space-y-5 border-b-1 align-middle sm:border-b-0">
             <SectionHeader title={'My Links'} fontSize="md:text-5xl" />
-            <ContactLink href={'https://www.linkedin.com/in/ken-j-lin'}>
+            <ContactLink
+              href={'https://www.linkedin.com/in/ken-j-lin'}
+              target={'_blank'}
+            >
               LinkedIn
             </ContactLink>
-            <ContactLink href={'https://github.com/K3nLin'}>Github</ContactLink>
+            <ContactLink href={'https://github.com/K3nLin'} target={'_blank'}>
+              Github
+            </ContactLink>
           </div>
           <div className="flex-1/2">
             <SectionHeader title={'Contact Me'} fontSize="md:text-5xl" />
