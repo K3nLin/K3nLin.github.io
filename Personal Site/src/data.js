@@ -14,11 +14,25 @@ export const PROJECTS = [
     ],
   },
   {
+    title: 'Steam Game Reviews NLP',
+    duration: 'Aug 2024 - Dec 2024',
+    description:
+      'Developed a Python-based machine learning model to classify Steam game reviews as positive or negative using NLP techniques like tokenization, lemmatization, stop-word removal, and TF-IDF. Collected ~10,000 balanced reviews via the Steam API, achieving 80–90% accuracy on mixed datasets.',
+    skills: ['Python', 'Machine Learning'],
+  },
+  {
     title: 'Youtube Clone',
     duration: 'Jun 2024 - July 2024',
     description:
       'Created a static clone of the YouTube homepage using HTML and CSS, focusing on replicating its visual layout. Applied Flexbox and CSS Grid to organize the page structure and styled key interface elements. Followed best practices for semantic HTML and modern CSS.',
     skills: ['HTML', 'CSS'],
+  },
+  {
+    title: 'Sprout Spot',
+    duration: 'Jan 2024 - May 2024',
+    description:
+      'Developed an Android app for plant care with watering timers, plant issue diagnosis, and AI-powered Q&A. Used Firebase for authentication, data storage, and forums, and integrated push notifications for watering reminders and forum updates.',
+    skills: ['Java', 'XML Styling', 'Firebase'],
   },
 ]
 

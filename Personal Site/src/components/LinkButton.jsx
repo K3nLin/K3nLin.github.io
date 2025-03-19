@@ -1,8 +1,8 @@
 import React from 'react'
 
-const LinkButton = ({ icon, href, ...props }) => {
+const LinkButton = ({ icon, href, clickHandler, ...props }) => {
   return (
-    <a href={href} target="_blank">
+    <a href={href} target="_blank" onClick={clickHandler}>
       <img
         src={icon}
         {...props}

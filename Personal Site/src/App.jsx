@@ -20,6 +20,12 @@ import * as DATA from './data.js'
 import resume from './assets/Resume.docx.pdf'
 
 const App = () => {
+  function emailClickHandler(e) {
+    window.location.href =
+      'https://mail.google.com/mail/?view=cm&to=kenlinahs@gmail.com'
+    e.preventDefault()
+  }
+
   const [isActive, setIsActive] = useState('')
 
   useEffect(() => {
@@ -78,10 +84,10 @@ const App = () => {
           className="flex w-20 flex-col justify-between space-y-2 space-x-3 sm:h-7 sm:w-25 sm:flex-row md:h-15 md:w-40 lg:h-20 lg:w-50 xl:w-60"
         >
           <LinkButton
-            href={'mailto:kenlinahs@gmail.com'}
             icon={emailIcon}
             id={'email-icon'}
             alt={'Email Icon'}
+            clickHandler={emailClickHandler}
           />
           <LinkButton
             href={'https://github.com/K3nLin'}
@@ -100,7 +106,7 @@ const App = () => {
       <div id="section-cont" className="flex flex-col pl-5 sm:pl-8 xl:mr-96">
         <section
           id="about-me"
-          className="flex h-screen flex-col items-center justify-center space-y-5 pt-50 sm:space-x-5 sm:pt-0 md:flex-row"
+          className="flex h-screen flex-col items-center justify-center space-y-5 pt-50 sm:space-x-5 md:flex-row md:pt-0"
         >
           <div className="mx-5 inline-block size-55 shrink-0 overflow-hidden rounded-full sm:size-50 md:size-65 lg:mx-10 lg:size-90 xl:mx-15">
             <img

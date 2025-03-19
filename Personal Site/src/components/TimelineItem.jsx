@@ -31,7 +31,7 @@ const TimelineItem = ({
           <div id="skills-container" className="w-full space-y-2 space-x-3">
             {skills.map((skill, i) => (
               <div
-                className="bg-darkOrange text-mediumdOrange inline-block w-max rounded-full px-2 py-1 sm:px-4 sm:py-3"
+                className="bg-darkOrange text-mediumOrange inline-block w-max rounded-full px-2 py-1 sm:px-4 sm:py-3"
                 key={i}
               >
                 {skill}
