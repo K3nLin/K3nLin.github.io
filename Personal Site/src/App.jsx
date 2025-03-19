@@ -1,8 +1,10 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
 
 // React Components
-import NavButton from './components/NavButton'
+import NavLink from './components/NavLink.jsx'
 import LinkButton from './components/LinkButton'
+import StylishButton from './components/StylishButton.jsx'
 import TimelineItem from './components/TimelineItem'
 import SectionHeader from './components/SectionHeader.jsx'
 
@@ -14,8 +16,33 @@ import profilePicture from './assets/profilepic.jpg'
 
 // Data
 import * as DATA from './data.js'
+import resume from './assets/Resume.docx.pdf'
 
 const App = () => {
+  const [isActive, setIsActive] = useState('')
+
+  useEffect(() => {
+    const sections = document.querySelectorAll('section')
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          console.log(entry.isIntersecting)
+          if (!entry.isIntersecting) return
+          setIsActive(entry.target.id)
+        })
+      },
+      {
+        threshold: 0.5,
+      }
+    )
+
+    sections.forEach((section) => observer.observe(section))
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section))
+    }
+  }, [])
+
   return (
     <div className="flex">
       <div
@@ -29,18 +56,21 @@ const App = () => {
           id="nav-items"
           className="flex h-1/3 w-full flex-col content-center space-y-5 pr-10 pl-5 text-xs sm:h-1/3 sm:space-y-10 sm:pl-10 sm:text-sm md:pl-15 md:text-base lg:pl-20 lg:text-xl xl:pl-30"
         >
-          <a className="block" href="#about-me">
+          <NavLink href={'#about-me'} isActive={isActive === 'about-me'}>
             About Me
-          </a>
-          <a className="block" href="#projects">
+          </NavLink>
+          <NavLink href={'#projects'} isActive={isActive === 'projects'}>
             Projects
-          </a>
-          <a className="block" href="#work-experience">
+          </NavLink>
+          <NavLink
+            href={'#work-experience'}
+            isActive={isActive === 'work-experience'}
+          >
             Work Experience
-          </a>
-          <a className="block" href="#about-me">
+          </NavLink>
+          <NavLink href={'#contact-me'} isActive={isActive === 'contact-me'}>
             Contact Me
-          </a>
+          </NavLink>
         </nav>
         <nav
           id="links-container"
@@ -88,10 +118,15 @@ const App = () => {
               Full-Stack developer who loves to learn new technologies and
               leverage them to solve real-world problems.
             </p>
-            <button>View Resume</button>
+            <StylishButton
+              hoverText={'Download Now'}
+              href={resume}
+              target={'_blank'}
+            >
+              View Resume
+            </StylishButton>
           </div>
         </section>
-        {/* <SectionHeader title={'Projects'} /> */}
         <section id="projects" className="border-y-1">
           {DATA.PROJECTS.map((proj, i) => (
             <TimelineItem
@@ -103,7 +138,6 @@ const App = () => {
             />
           ))}
         </section>
-        {/* <SectionHeader title={'Work Experience'} /> */}
         <section id="work-experience" className="border-b-1">
           {DATA.WORK_EXPERIENCES.map((experience, i) => (
             <TimelineItem

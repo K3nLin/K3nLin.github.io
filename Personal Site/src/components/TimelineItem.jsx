@@ -7,12 +7,10 @@ const TimelineItem = ({
   description,
   bullets,
   skills,
-  ...props
 }) => {
   return (
-    // <div className="mx-5 inline-block size-55 shrink-0 overflow-hidden rounded-full sm:size-50 md:size-65 lg:mx-10 lg:size-90 xl:mx-15"></div>
     <div className="flex flex-col py-5 text-lg sm:text-xl md:flex-row">
-      <div id="duration" className="flex-1/2 py-5">
+      <div id="duration" className="d, flex-1/2 py-5 sm:py-0">
         <p className="text-center">{duration}</p>
       </div>
       <div id="description" className="flex-1/2 space-y-4">
@@ -24,8 +22,8 @@ const TimelineItem = ({
           <p>{description}</p>
         ) : (
           <ul className="space-y-2">
-            {bullets.map((bullet) => (
-              <li>&bull; {bullet}</li>
+            {bullets.map((bullet, i) => (
+              <li key={`${company}-${i}`}>&bull; {bullet}</li>
             ))}
           </ul>
         )}
