@@ -1,7 +1,7 @@
 export const PROJECTS = [
   {
     title: 'Smart Swim Buoy',
-    duration: 'Sept 2024 - Present',
+    duration: 'Sept 2024 - May 2025',
     description:
       'A full-stack mobile app that pairs with a microcontroller-equipped swim buoy, enabling long-distance swimmers to track their swim distance in real time. The app connects via Bluetooth, records workout data, and helps swimmers monitor progress toward their goals.',
     skills: [
