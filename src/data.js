@@ -34,6 +34,13 @@ export const PROJECTS = [
       'Developed an Android app for plant care with watering timers, plant issue diagnosis, and AI-powered Q&A. Used Firebase for authentication, data storage, and forums, and integrated push notifications for watering reminders and forum updates.',
     skills: ['Java', 'XML Styling', 'Firebase'],
   },
+  {
+    title: 'Four-Stage Pipelined Multimedia Unit',
+    duration: 'Aug 2023 - Dec 2023',
+    description:
+      'I designed and implemented a 4-stage pipelined multimedia processor in VHDL, optimized for SIMD operations to enhance performance through parallelism. I addressed challenges like data hazards and instruction forwarding, ensuring efficient and simultaneous execution across all pipeline stages.',
+    skills: ['VHDL'],
+  },
 ]
 
 export const WORK_EXPERIENCES = [
@@ -42,9 +49,9 @@ export const WORK_EXPERIENCES = [
     duration: 'Jul 2024 - Aug 2024',
     company: 'NYC DDC',
     bullets: [
-      'Assisted with documenting project scope, timelines, and budgets, maintaining consistency in project planning records.',
-      'Meticulously reviewed project documents to ensure accuracy and completeness of contracts, routing sheets, and payments.',
-      'Utilized project management software (PIMS and PDMS) to track project milestones, documentation, and deliverables, enhancing project visibility and streamlining project progression.',
+      'Assisted with documenting project scopes, timelines, and budgets while maintaining consistency in project planning records',
+      'Audited contracts and routing sheets for compliance, improving record accuracy, and approval workflows.',
+      'Operated PIMS/PDMS software to monitor milestones, streamline deliverables, and boost team coordination.',
     ],
   },
   {
@@ -52,9 +59,9 @@ export const WORK_EXPERIENCES = [
     duration: 'Jul 2023 - Aug 2023',
     company: 'JAB Industries Inc',
     bullets: [
-      'Collaborated with cross-functional teams to support project planning and execution, contributing to the successful coordination of resources, schedules, and budgets for diverse construction endeavors.',
-      'Assisted in conducting site inspections and quality control assessments, ensuring adherence to industry regulations and project specifications, while actively participating in the resolution of on-site challenges.',
-      'Skillfully managed project documents, progress reports, and correspondence, enhancing communication effectiveness and optimizing project tracking efficiency within the construction management framework.',
+      'Coordinated with engineers and contractors to align timelines, resource allocation, and budget tracking for multiple construction sites.',
+      'Conducted site visits and performed quality checks to ensure regulatory compliance and resolve field issues in real-time.',
+      'Organized documentation and reports, improving transparency and communication across project stakeholders.',
     ],
   },
   {
@@ -62,9 +69,9 @@ export const WORK_EXPERIENCES = [
     duration: 'Jan 2023 - May 2023',
     company: 'Stony Brook University',
     bullets: [
-      'Supported an engineering course in C programming covering core concepts like bitwise operations, file scanning, stack-based computation, finite state machines, hash tables, and linked lists.',
-      'Clarified misconceptions and answered any questions the students may have on the material being presented.',
-      'Conducted lab sections consisting of 20 students, 3 hours per week that supplemented a lecture course to further develop students’ understanding.',
+      'Facilitated weekly labs for 20 students in C programming, reinforcing concepts such as bitwise operations, FSMs, and data structures.',
+      'Guided students through debugging, logic building, and exam prep, improving overall comprehension and performance.',
+      'Collaborated with faculty to adapt instruction to common student challenges and improve lab engagement.',
     ],
   },
 ]

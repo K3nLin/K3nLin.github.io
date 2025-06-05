@@ -17,7 +17,7 @@ import profilePicture from './assets/profilepic.jpg'
 
 // Data
 import * as DATA from './data.js'
-import resume from './assets/Resume.docx.pdf'
+import resume from './assets/Ken_Lin_Resume.docx.pdf'
 
 const App = () => {
   function emailClickHandler(e) {
