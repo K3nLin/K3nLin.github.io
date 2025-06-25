@@ -120,10 +120,11 @@ const App = () => {
               A Little About Me!
             </h1>
             <p className="xl:text-xl">
-              My name is Ken Lin, I am currently a senior at Stony Brook
-              University majoring in Computer Engineering. I am an aspiring
-              Full-Stack developer who loves to learn new technologies and
-              leverage them to solve real-world problems.
+              Hi, my name is Ken Lin. I recently graduated from Stony Brook
+              University in May 2025 with a Bachelor's degree in Computer
+              Engineering. I am an aspiring Full-Stack Developer with a passion
+              for learning new technologies and applying them to solve
+              real-world problems.
             </p>
             <StylishButton
               hoverText={'Download Now'}
