@@ -6,7 +6,7 @@ const LinkButton = ({ icon, href, clickHandler, ...props }) => {
       <img
         src={icon}
         {...props}
-        className="z-20 h-8 w-8 hover:animate-bounce md:h-14 md:w-14"
+        className="z-20 inline-block h-8 w-8 hover:animate-bounce md:h-14 md:w-14"
       />
     </a>
   )

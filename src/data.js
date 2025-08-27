@@ -12,6 +12,7 @@ export const PROJECTS = [
       'Figma',
       'TailwindCSS',
     ],
+    projLink: 'https://github.com/K3nLin/SmartSwim',
   },
   {
     title: 'Steam Game Reviews NLP',
@@ -26,6 +27,7 @@ export const PROJECTS = [
     description:
       'Created a static clone of the YouTube homepage using HTML and CSS, focusing on replicating its visual layout. Applied Flexbox and CSS Grid to organize the page structure and styled key interface elements. Followed best practices for semantic HTML and modern CSS.',
     skills: ['HTML', 'CSS'],
+    projLink: 'https://github.com/K3nLin/YoutubeClone',
   },
   {
     title: 'Sprout Spot',

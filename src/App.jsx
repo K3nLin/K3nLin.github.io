@@ -143,6 +143,7 @@ const App = () => {
               description={proj.description}
               skills={proj.skills}
               key={`project${i}`}
+              projLink={proj.projLink ?? null}
             />
           ))}
         </section>

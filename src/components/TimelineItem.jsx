@@ -1,8 +1,11 @@
 import React from 'react'
+import LinkButton from './LinkButton'
+import linkIcon from '../assets/link-icon.svg'
 
 const TimelineItem = ({
   duration,
   title,
+  projLink,
   company,
   description,
   bullets,
@@ -17,7 +20,10 @@ const TimelineItem = ({
         {company ? (
           <p className="text-2xl font-bold xl:text-4xl">{company}</p>
         ) : null}
-        <p className="text-2xl font-bold xl:text-4xl">{title}</p>
+        <div className="flex items-center">
+          <p className="inline-block text-2xl font-bold xl:text-4xl">{title}</p>
+          {projLink ? <LinkButton icon={linkIcon} href={projLink} /> : null}
+        </div>
         {description ? (
           <p>{description}</p>
         ) : (
