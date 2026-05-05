@@ -47,6 +47,26 @@ export const PROJECTS = [
 
 export const WORK_EXPERIENCES = [
   {
+    title: 'Associate Software Developer',
+    duration: 'Mar 2026 - Present',
+    company: 'Dev10',
+    bullets: [
+      'Selected for a competitive software development program focused on full-stack application development.',
+      'Build scalable backend services with Java, Spring Boot, REST APIs, and SQL databases.',
+      'Develop responsive React frontends integrated with Spring Boot APIs for end-to-end web applications.'
+    ]
+  },
+  {
+    title: 'Associate Consultant',
+    duration: 'Dec 2025 - Feb 2026',
+    company: 'Lumenci',
+    bullets: [
+        'Conduct technical due diligence, infringement research, and portfolio analysis to support IP and engineering initiatives.',
+        'Reverse-engineer software and hardware systems using industry tools, code review, and product documentation.',
+        'Translate complex technical concepts into clear insights for cross-functional teams and clients.'
+    ]
+  },
+  {
     title: 'Project Management Intern',
     duration: 'Jul 2024 - Aug 2024',
     company: 'NYC DDC',

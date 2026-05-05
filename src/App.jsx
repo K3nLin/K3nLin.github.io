@@ -13,10 +13,10 @@ import ContactLink from './components/ContactLink.jsx'
 import emailIcon from './assets/envelope-solid.svg'
 import githubIcon from './assets/github-brands.svg'
 import linkedInIcon from './assets/linkedin-brands.svg'
-import profilePicture from './assets/profilepic.jpg'
+import profilePicture from './assets/HeadshotCompressed.png'
 
 // Data
-import * as DATA from './data.js'
+import * as DATA from './data/data.js'
 import resume from './assets/Ken_Lin_Resume.docx.pdf'
 
 const App = () => {
@@ -33,7 +33,6 @@ const App = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          console.log(entry.isIntersecting)
           if (!entry.isIntersecting) return
           setIsActive(entry.target.id)
         })
